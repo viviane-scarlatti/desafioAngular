@@ -1,0 +1,13 @@
+<div *ngFor = 'let _tarefa of listaDeTarefas'>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+                <p> <strong>Id do usuário:</strong> {{_tarefa.userId}} </p>
+                <p><strong> Id da tarefa: </strong> {{_tarefa.id}} </p>
+                <p><strong>Título da tarefa: </strong> {{_tarefa.title}} </p> 
+                <p><strong>Tarefa completada: </strong>{{_tarefa.completed}} </p>
+        </div>      
+        <div class="col-md-2">
+        </div>
+    </div>
+    </div>  

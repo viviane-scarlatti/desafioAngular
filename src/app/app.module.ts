@@ -9,6 +9,11 @@ import { HomeComponent } from './home/home.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserListComponent } from './user-list/user-list.component';
+import { TarefasComponent } from './tarefas/tarefas.component';
+import { BuscaComponent } from './busca/busca.component';
+import { UserIdComponent } from './user-id/user-id.component';
+
+import { FormsModule } from '@angular/forms'; 
 
 @NgModule({
   declarations: [
@@ -17,12 +22,16 @@ import { UserListComponent } from './user-list/user-list.component';
     NavbarComponent,
     HomeComponent,
     RodapeComponent,
-    UserListComponent
+    UserListComponent,
+    TarefasComponent,
+    BuscaComponent,
+    UserIdComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
 
   ],
   providers: [],

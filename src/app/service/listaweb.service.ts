@@ -11,7 +11,14 @@ export class ListawebService {
   getAll(){
     return this.http.get("https://jsonplaceholder.typicode.com/users");
   }
-  get(id: number){
+  recuperaUserPeloID(id: number){
     return this.http.get(`https://jsonplaceholder.typicode.com/users/${id}`);
+  }
+
+  recuperaListaDeTarefas(){
+    return this.http.get("https://jsonplaceholder.typicode.com/todos");
+  }
+  recuperaTarefaPeloId(id: number){
+    return this.http.get(`https://jsonplaceholder.typicode.com/todos/${id}`);
   }
 }
